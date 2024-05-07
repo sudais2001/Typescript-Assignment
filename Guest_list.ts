@@ -1,12 +1,12 @@
 let Guest_list :string[]= ['Nawaz Sharif' , 'Imran Khan' , 'Asif Zardari'];
 
-for(let i=0; i<Guest_list.length; i++){
+// for(let i=0; i<Guest_list.length; i++){
 
 
-    console.log('Dear Mr. ' + Guest_list[i] + ',\n\nIt is our pleasure to invite you in your party.\n\nThank you!\n\n')
+//     console.log('Dear Mr. ' + Guest_list[i] + ',\n\nIt is our pleasure to invite you in your party.\n\nThank you!\n\n')
 
 
-}
+// }
 
 let absent_Guest :string = 'Imran Khan' ; 
 
@@ -20,5 +20,20 @@ for(let i=0; i<Guest_list.length; i++){
 
 }
 
-console.log(`${absent_Guest}is not comingto the par.`)
+console.log(`${absent_Guest}is not comingto the par.`);
 
+console.log('Good News! We find Big Table So We are inviting 3 more person.')
+
+
+Guest_list.unshift('Sir Faisal Masood') ;
+Guest_list.splice(2 , 0 , 'Arif Alwi');
+Guest_list.push('Salman Khan');
+
+
+for(let i=0; i<Guest_list.length; i++){
+
+
+    console.log('Dear Mr. ' + Guest_list[i] + ',\n\nIt is our pleasure to invite you in your party.\n\nThank you!\n\n')
+
+
+}
